@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         txt = findViewById(R.id.txt);
         btn = findViewById(R.id.btn);
         web = findViewById(R.id.web);
+        String url = ("https://www.google.com");
+
 
         web.setWebViewClient(new MyWebViewClient());
 
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                web.loadUrl("https://www.google.com");
+                web.loadUrl(url);
 
             }
         });
